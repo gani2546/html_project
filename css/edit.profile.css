@@ -1,0 +1,82 @@
+/* Global styles */
+body {
+    background: url("1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the profile */
+.profile {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.profile h2 {
+    margin-top: 0;
+}
+
+.profile p {
+    margin: 5px 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+}
+
+/* Style for the edit profile form */
+form {
+    background-color: azure;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #4CAF50;
+}

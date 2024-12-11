@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ideal Admin & Student Login</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h1>IDEAL</h1>
+                <p>INSTITUTE OF TECHNOLOGY</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="Home" class="link active">Home</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button onclick="studentlogin()" class="btn white-btn" id="loginBtn">Student</button> 
+                <button onclick="Adminlogin()" class="btn black-btn" id="loginBtn">Admin</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+
+            <!-------------------------------- Form box ----------------------------------->
+       <div class="form-box">
+            <!---------------------------- Student login ----------------------------->
+
+            <div class="Studentlogin-container"  id="Student-login">
+                <div class="top">
+                    <form action="checklogin.php" method="POST">    
+                            <header>STUDENT LOGIN</header>
+                            <span>Are you  a Admin? Log in here!<a href="#" onclick="Adminlogin()">Admin</a></span>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="input-field" placeholder="Register number">
+                            <i class="bx bx-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field" placeholder="Password">
+                            <i class="bx bx-lock-alt"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit" value="Sign In">
+                        </div>
+                    </form>
+            </div>
+
+             <!----------------------------------- Admin login ------------------------------------->
+
+            <div class="Adminlogin-container"  id="Admin-login">
+                <div class="top">
+                    <form action="checklogin.php" method="POST">
+                            <header>ADMIN LOGIN</header>
+                            <span>Are you a Student? Log in here!<a href="#" onclick="studentlogin()">Student</a></span>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="input-field" placeholder="Register number">
+                            <i class="bx bx-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field" placeholder="Password">
+                            <i class="bx bx-lock-alt"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit" value="Sign In">
+                        </div>
+                    </form>
+            </div>
+       </div>
+    </div>   
+
+    <script>
+        function myMenuFunction() {
+        var i = document.getElementById("navMenu");
+
+        if(i.className === "nav-menu") {
+            i.className += " responsive";
+        } else {
+            i.className = "nav-menu";
+        }
+    }
+    
+    </script>
+
+    <script>
+
+    var a = document.getElementById("loginBtn");
+    var b = document.getElementById("loginBtn");
+    var x = document.getElementById("Student-login");
+    var y = document.getElementById("Admin-login");
+        
+    function studentlogin() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+
+    function Adminlogin() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+
+    </script>
+
+</body>
+</html>

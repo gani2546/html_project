@@ -1,0 +1,148 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Logo container styles */
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  max-width: 100%; /* Adjust logo size */
+  height: auto;
+}
+
+/* Search container styles */
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  padding: 15px; /* Increase padding */
+  width: 300px; /* Adjust width */
+  border: 2px solid #ced4da; /* Add border */
+  border-radius: 50px; /* Rounded border */
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.search-input:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2); /* Adjusted shadow on focus */
+}
+
+.search-button {
+  padding: 15px 30px; /* Increase padding */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px; /* Rounded border */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown styles */
+.dropdown {
+  padding: 15px; /* Increase padding */
+  border: 2px solid #ced4da; /* Add border */
+  border-radius: 50px; /* Rounded border */
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  position: relative;
+}
+
+.dropdown::after {
+  content: "\25BC"; /* Unicode for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Adjust as needed */
+  transform: translateY(-50%);
+}
+
+.dropdown:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2); /* Adjusted shadow on focus */
+}
+
+/* Form container styles */
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  padding: 15px 30px; /* Increase padding */
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 50px; /* Rounded border */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+
+
+/* Table container styles */
+#table-container {
+  margin-top: 20px;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+  padding: 20px; /* Increase padding */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.result-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Logout Button Styles */
+.logout-container {
+  position: absolute;
+  top: 20px; /* Adjust top position as needed */
+  right: 20px; /* Adjust left position as needed */
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 30px; /* Slightly rounder border */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}

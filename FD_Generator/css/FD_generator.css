@@ -1,0 +1,113 @@
+/* CombinedStyles.css */
+
+/* Common Styling */
+.fdcontainer, .Manualcontainer, .Bulkcontainer {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fdcontainer h1, .fdcontainer h2,
+.Manualcontainer h2, .Bulkcontainer h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.fdcontainer label, .Manualcontainer label, .Bulkcontainer label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.fdcontainer select, .fdcontainer button, .fdcontainer input[type="file"],
+.Manualcontainer select, .Manualcontainer button, .Manualcontainer input[type="file"],
+.Bulkcontainer select, .Bulkcontainer button, .Bulkcontainer input[type="file"] {
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f4780;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fdcontainer button:hover, .Manualcontainer button:hover, .Bulkcontainer button:hover {
+  background-color: #073e6b;
+}
+
+.fdcontainer a, .Manualcontainer a, .Bulkcontainer a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #0f4780;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.fdcontainer a:hover, .Manualcontainer a:hover, .Bulkcontainer a:hover {
+  color: #073e6b;
+}
+
+/* Feedback Form Generator Section */
+.fdcontainer {
+  text-align: center;
+}
+
+.fdcontainer select {
+  width: calc(100% - 30px);
+}
+
+.fdcontainer input[type="file"] {
+  width: calc(100% - 40px);
+}
+
+/* Manual Entry Section */
+.Manualcontainer {
+  text-align: center;
+}
+
+.Manualcontainer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.Manualcontainer table th, .Manualcontainer table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.Manualcontainer table th {
+  background-color: #0f4780;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Bulk Entry Section */
+.Bulkcontainer {
+  background-color: #fff;
+}
+
+.Bulkcontainer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20%;
+}
+
+.Bulkcontainer table th, .Bulkcontainer table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.Bulkcontainer table th {
+  background-color: #0f4780;
+  color: #fff;
+  font-weight: bold;
+}
